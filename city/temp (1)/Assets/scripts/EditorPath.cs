@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*Written by Mor Halfon 
+ * 
+ * This script is creating the path for the car to follow.
+ * The path is set with nodes that are game objects.
+ * The code puts all the children objects of a path in a Transform array
+ * and draws a line between them.
+*/
+
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +17,7 @@ public class EditorPath : MonoBehaviour {
     public Color lineColor = Color.blue;
     public List<Transform> path_objs = new List<Transform>();
     Transform[] transforms;
+
 
     private void OnDrawGizmos()
     {
