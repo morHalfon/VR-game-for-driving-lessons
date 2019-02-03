@@ -14,21 +14,31 @@ using UnityEngine;
 
 public class ControlCar : MonoBehaviour {
 
-    public PathsEditor paths;
+    public PathsEditor all_paths;
     public EditorPath pathToFollow;
-    public int currWayPointID = 0;
-    public float speed;
-    private float reachDistance = 1.0f;
-    public float rotationSpeed = 5.0f;
-    public string pathName;
+    public JunctionEditor all_junctions;
+    private Transform nextPath;
+    private int currWayPointID;
+    private float speed;
+    private float reachDistance;
+    private float rotationSpeed;
+    private string pathName;
+    private bool inJunction;
    
 
 	// Use this for initialization
 	void Start ()
     {
+        all_paths = GameObject.Find("paths").GetComponent<PathsEditor>();
+        all_junctions = GameObject.Find("junctions").GetComponent<JunctionEditor>();
+        pathName = all_paths.paths[0].name;
         pathToFollow = GameObject.Find(pathName).GetComponent<EditorPath>();
-        paths = GameObject.Find("paths").GetComponent<PathsEditor>();
-	}
+        speed = 20f;
+        reachDistance = 1.0f;
+        rotationSpeed = 5.0f;
+        currWayPointID = 0;
+        inJunction = false;
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -36,27 +46,57 @@ public class ControlCar : MonoBehaviour {
         if(currWayPointID < pathToFollow.path_objs.Count)
         {
             float currDistance = Vector3.Distance(pathToFollow.path_objs[currWayPointID].position, transform.position);
-            Vector3 target = pathToFollow.path_objs[currWayPointID].position;
-            transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * speed);
-            var rotation = Quaternion.LookRotation(target - transform.position);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
+            Vector3 nextWayPoint = pathToFollow.path_objs[currWayPointID].position;
+            setPositionAndRotation(nextWayPoint);
+            
             if (currDistance <= reachDistance)
             {
                 currWayPointID++;
+                //slows the car is before an intersection.
+                if (currWayPointID == (pathToFollow.path_objs.Count - 2) && !inJunction)
+                {
+                    speed = 10;
+                }
                 if (currWayPointID == (pathToFollow.path_objs.Count - 1))
                 {
-                    Transform newPath = paths.chooseRandomPath(pathToFollow, pathToFollow.path_objs[currWayPointID]);
-                    if (newPath != null)
-                    {
-                        pathName = newPath.name;
-                        pathToFollow = GameObject.Find(pathName).GetComponent<EditorPath>();
-                        currWayPointID = 0;
-                    }
-                   
+                    setNextPath();
                 }
 
             }
         }
         
 	}
+
+    private void setPositionAndRotation(Vector3 nextPoint)
+    {
+        transform.position = Vector3.MoveTowards(transform.position, nextPoint, Time.deltaTime * speed);
+        var rotation = Quaternion.LookRotation(nextPoint - transform.position);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
+    }
+    private void setNextPath()
+    {
+        if (inJunction)
+        {
+            nextPath = all_paths.findPath(pathToFollow, pathToFollow.path_objs[currWayPointID]);
+            if (nextPath != null)
+            {
+                pathName = nextPath.name;
+                pathToFollow = GameObject.Find(pathName).GetComponent<EditorPath>();
+                currWayPointID = 0;
+                speed = 20;
+            }
+            inJunction = false;
+        }
+        else
+        {
+            nextPath = all_junctions.chooseRandomDirection(pathToFollow, pathToFollow.path_objs[currWayPointID]);
+            if (nextPath != null)
+            {
+                pathName = nextPath.name;
+                pathToFollow = GameObject.Find(pathName).GetComponent<EditorPath>();
+                currWayPointID = 0;
+            }
+            inJunction = true;
+        }
+    }
 }
