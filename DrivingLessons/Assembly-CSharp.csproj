@@ -65,21 +65,21 @@
     <Compile Include="Assets\scripts\JunctionEditor.cs" />
     <Compile Include="Assets\scripts\PathsEditor.cs" />
     <Compile Include="Assets\scripts\Turn.cs" />
-    <Compile Include="Assets\user_car\scripts\CameraTurn.cs" />
+    <Compile Include="Assets\user_car\CameraTurn.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_2 path/DrivingLessons/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_3 path/DrivingLessons/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_2 path/DrivingLessons/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_3 path/DrivingLessons/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_2 path/DrivingLessons/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_3 path/DrivingLessons/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_2 path/DrivingLessons/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_3 path/DrivingLessons/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_2 path/DrivingLessons/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_3 path/DrivingLessons/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -283,13 +283,13 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_2 path/DrivingLessons/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_3 path/DrivingLessons/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_2 path/DrivingLessons/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_3 path/DrivingLessons/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_2 path/DrivingLessons/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/v2_3 path/DrivingLessons/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

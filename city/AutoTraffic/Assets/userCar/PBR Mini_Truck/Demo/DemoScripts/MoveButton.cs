@@ -1,16 +1,3 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
-
-public class MoveButton : MonoBehaviour 
-{
-	GameObject Holder;
-	
-	// Use this for initialization
-	void Start () 
-	{
-		Holder = GameObject.Find("Holder");
-		if (Holder != null || Holder.GetComponent<InstantiateThings>().Things.Length == 1)
-			GetComponent<RectTransform>().anchoredPosition = new Vector3(-100f,50f,0f);
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8488cfeb7b1178d45c5ebb54531d17cc4080fb7979dbd759d6c7812932870ba2
+size 410

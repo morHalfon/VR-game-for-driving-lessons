@@ -1,22 +1,3 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
-
-public class RotateCar : MonoBehaviour 
-{
-	Slider slider;
-	float angle;
-	
-	void Start()
-	{
-		slider = GameObject.Find("Canvas/CarRotation").GetComponent<Slider>();
-		
-	}
-	
-	public void RotateAround()
-	{
-		angle = slider.value;
-		transform.localEulerAngles = new Vector3 (0f, angle, 0f);
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:792a604d4457f07744f39403d17f315b13b27d164db22e2cee5d859f6ae96156
+size 386
