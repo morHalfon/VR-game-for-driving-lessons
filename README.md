@@ -8,6 +8,7 @@ The purpose in this game is to help improve the users response time and how to r
 
 ## Tools & Practices
 Project's working environments - Unity and Blender.<br/>
+Project's code environmemt - Visual studio 2017 <br/>
 Version control system - git & github.<br/>
 Project management board - [board.](https://github.com/morHalfon/VR-game-for-driving-lessons/projects/1)<br/>
 Issues - [here](https://github.com/morHalfon/VR-game-for-driving-lessons/issues)<br/>
