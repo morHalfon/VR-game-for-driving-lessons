@@ -60,16 +60,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\scripts\Blinking.cs" />
+    <Compile Include="Assets\_SpeedoMeterAssets\_Scripts\PlayerScript.cs" />
+    <Compile Include="Assets\_SpeedoMeterAssets\_Scripts\SpeedoMeterScript.cs" />
     <Compile Include="Assets\scripts\CameraTurn.cs" />
     <Compile Include="Assets\scripts\CarsStarter.cs" />
     <Compile Include="Assets\scripts\ControlCar.cs" />
     <Compile Include="Assets\scripts\CrossJunction.cs" />
     <Compile Include="Assets\scripts\EditorPath.cs" />
+    <Compile Include="Assets\scripts\Exit.cs" />
     <Compile Include="Assets\scripts\JunctionLightsController.cs" />
     <Compile Include="Assets\scripts\JunctionPathsEditor.cs" />
     <Compile Include="Assets\scripts\PathsEditor.cs" />
-    <Compile Include="Assets\scripts\Pause.cs" />
+    <Compile Include="Assets\scripts\SteeringButtons.cs" />
     <Compile Include="Assets\scripts\TrafficLightController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/הלל/Desktop/שנה ד/פרוייקט גמר/שיעורי נהיגה פרוייקט חדש/final_v7/DrivingLessons/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
