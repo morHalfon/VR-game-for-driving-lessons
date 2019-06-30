@@ -17,5 +17,6 @@ Documentation - [Wiki](https://github.com/morHalfon/VR-game-for-driving-lessons/
 ## Project Documents
 * [Inception](https://github.com/morHalfon/VR-game-for-driving-lessons/wiki/Inception)
 * [User's manual](https://github.com/morHalfon/VR-game-for-driving-lessons/wiki/User's--Manual)
+* [Project manual](https://github.com/morHalfon/VR-game-for-driving-lessons/wiki/Project-Manual)
 * [Design charts](https://github.com/morHalfon/VR-game-for-driving-lessons/wiki/Design-charts)
 * [Alpha version](https://github.com/morHalfon/VR-game-for-driving-lessons/wiki/Alpha-version)
