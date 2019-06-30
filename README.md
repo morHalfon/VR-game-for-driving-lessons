@@ -14,6 +14,11 @@ Project management board - [board.](https://github.com/morHalfon/VR-game-for-dri
 Issues - [here](https://github.com/morHalfon/VR-game-for-driving-lessons/issues)<br/>
 Documentation - [Wiki](https://github.com/morHalfon/VR-game-for-driving-lessons/wiki)<br/>
 
+## Project Information
+User's manual - This is a guide to use our simulation. <br/>
+Project manual - This is a guide to our files and folders of the project. It explains where are the scripts<br/>
+and what each script does.
+
 ## Project Documents
 * [Inception](https://github.com/morHalfon/VR-game-for-driving-lessons/wiki/Inception)
 * [User's manual](https://github.com/morHalfon/VR-game-for-driving-lessons/wiki/User's--Manual)
